@@ -21,7 +21,7 @@ table, th, td {
 body {padding: 5%;}
 
 #root {
-    max-width: 1024px;
+    //max-width: 1024px;
     margin: 0 auto;
 }
 
