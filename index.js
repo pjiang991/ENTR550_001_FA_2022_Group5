@@ -66,6 +66,7 @@
     addMapMarkers();
     initLocationSearch();
     updateTable();
+    $("#myTable").prop('hidden', false);
   }
 
 
