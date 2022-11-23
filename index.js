@@ -66,7 +66,6 @@
     addMapMarkers();
     initLocationSearch();
     updateTable();
-    $("#myTable").prop('hidden', false);
   }
 
 
@@ -163,8 +162,13 @@
     PARKING_PASSES.forEach(id => {
       $("#show" + id).click(updateTable);
     });
-    $("#deselectPasses").click(() => {
-      $("label.parkingPass input").prop("checked", false)
+    $("#toggleSelectPasses").click(() => {
+      console.log(  $("label.parkingPass input:checked").length);
+      let allChecked = true;
+      for (let option of $("label.parkingPass input")) {
+        allChecked = allChecked && $(option).prop("checked");
+      }
+      $("label.parkingPass input").prop("checked", !allChecked)
       updateTable();
     });
     MISC.forEach(id => {
