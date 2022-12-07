@@ -23,11 +23,11 @@
   <script src="index.js"></script>
 </head>
 
-
+<div class='header'>
+    <h1 class="title">UMich North Campus Parking Info</h1>
+</div>
 
 <body>
-  <div id="root">
-    <h1>UMich North Campus Parking Info</h1>
     <!--filter-->
     <fieldset>
       <legend></legend>
@@ -56,6 +56,15 @@
       <label class="parkingPass gold"><input type="checkbox" id="showgold" checked></label>
       <label class="parkingPass housing"><input type="checkbox" id="showhousing" checked></label>
       <button type="button" name="button" id="toggleSelectPasses">Toggle Select All</button>
+    </fieldset>
+    <fieldset>
+      <!--Section for payrates-->
+      <legend>View Parking Prices Here:</legend>
+      <label>PayStation: $2/Hr</label>
+      <label>Yellow Lot: <a href='https://ltp.umich.edu/parking/permit-parking/yellow/'>Price Matrix</a>(Varies in prices)</label>
+      <label>Orange Lot: <a href='https://ltp.umich.edu/parking/permit-parking/orange/'>Price Matrix</a>(Varies in prices)</label>
+      <label>Blue Lot: <a href='https://ltp.umich.edu/parking/permit-parking/blue/'>Price Matrix</a>(Varies in prices)</label>
+      <label>Gold Lot: <a href='https://ltp.umich.edu/parking/permit-parking/gold/'>Price Matrix</a>(Varies in prices)</label>
     </fieldset>
     <fieldset>
       <legend>Misc:</legend>
@@ -143,4 +152,9 @@
     </table>
   </div>
 </body>
+<footer>
+  <div class="footer">
+    <p>ENTR 550 Group 5</p>
+  </div>
+</footer>
 </html>

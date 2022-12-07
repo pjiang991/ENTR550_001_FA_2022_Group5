@@ -18,11 +18,30 @@ table, th, td {
   content:"\e080";
 }
 
+#root {
+  background-color:#fece08;
+}
+
 body {padding: 5%;}
 
 #root {
-    max-width: 1024px;
+    //max-width: 1024px;
     margin: 0 auto;
+}
+
+.header {
+  width: auto;
+  height: 200px;
+  text-align: left;
+  background-image: url('https://payment.rpsa2.com/Images/Cover.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  border: 25px 25px 25px 25px;
+  color: black
 }
 
 /* Data table & filters */
@@ -102,4 +121,10 @@ label {margin-right: 10px;}
   color: white !important;
   padding: 5px !important;
   border-radius: 10px;
+}
+
+.footer p{
+  height: 200px;
+  background-color: #002d5e;
+  color:aliceblue;
 }
